@@ -8,7 +8,7 @@ export const ProductsCard3 = () => {
     const b = prod.slice(8, 16)
 
     useEffect(() => {
-        fetch('http://localhost:5000/getdata').then((resp) => resp.json()).then((data) => {
+        fetch('http://localhost:3000/getdata').then((resp) => resp.json()).then((data) => {
             setprod(data)
         })
     }, [])
